@@ -6,13 +6,8 @@
 GET /customer/rest/api/getcustomers
 ```
 
-<style scoped>
-table {
-  font-size: 13px;
-}
-</style>
 
-<table>
+<table style="font-size: 10px" >
   <tr style="background-color:#f0f0ff">
     <th>Name</th>
     <th>Type</th>
