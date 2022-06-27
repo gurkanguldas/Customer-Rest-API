@@ -6,8 +6,8 @@
 GET /customer/rest/api/getcustomers
 ```
 
-
-<table style="font-size: 10px" >
+<sub>
+<table>
   <tr style="background-color:#f0f0ff">
     <th>Name</th>
     <th>Type</th>
@@ -86,7 +86,7 @@ GET /customer/rest/api/getcustomers
     <td>Everything</td>
   </tr>
 </table>
-
+</sub>
 ```
 GET /customer/rest/api/getcustomers
 ```
