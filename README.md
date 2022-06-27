@@ -1,6 +1,6 @@
 
 ## Endpoint
-#### 1. Calling All Customers
+#### 1. To Call All Customers
 
 ```
 GET /customer/rest/api/getcustomers
@@ -89,6 +89,7 @@ GET /customer/rest/api/getcustomers
   </tr>
 </table>
 
+***
 ```
 GET /customer/rest/api/getcustomers
 ```
@@ -320,266 +321,275 @@ GET /customer/rest/api/getcustomers
 
 </details>
 
-
+***
 
 ######
-
-<font size="4">
 
 ```
 GET /customer/rest/api/getcustomers?type=nickname&descending=true&size=5
 ```
-</font> 
 
-<!-- HTML generated using hilite.me -->
-<div style="background: #f8f8f8; overflow:auto;width:auto;border-width:.1em .1em .1em .8em;background: #f2f2f2;max-height: 400px;"><pre style="margin: 0; line-height: 125%">{
-  <span style="color: #008000; font-weight: bold">&quot;succesful&quot;</span>: <span style="color: #008000; font-weight: bold">true</span>,
-  <span style="color: #008000; font-weight: bold">&quot;code&quot;</span>: <span style="color: #BA2121">&quot;getCustomers&quot;</span>,
-  <span style="color: #008000; font-weight: bold">&quot;message&quot;</span>: <span style="color: #BA2121">&quot;The customer list has been successfully called up.&quot;</span>,
-  <span style="color: #008000; font-weight: bold">&quot;result&quot;</span>: [
+<details>
+  <summary>
+    Result Endpoint
+  </summary>
+  
+```json
+{
+  "succesful": true,
+  "code": "getCustomers",
+  "message": "The customer list has been successfully called up.",
+  "result": [
     {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">326</span>,
-      <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;zumrutpektemek25&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;Q2yjs77rQ&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">326</span>,
-        <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Zümrüt Berçin&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Pektemek&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;woman&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;1941-07-27&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">17677987263</span>
+      "id": 326,
+      "nickname": "zumrutpektemek25",
+      "password": "Q2yjs77rQ",
+      "customerInfo": {
+        "id": 326,
+        "name": "Zümrüt Berçin",
+        "surname": "Pektemek",
+        "gender": "woman",
+        "dateOfBirth": "1941-07-27",
+        "identificationNumber": 17677987263
       },
-      <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">326</span>,
-        <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;KASTAMONU&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;DADAY&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;KAYABAĞI KÖYÜ MAH.KARŞI MEVKİ SOKAK NO:335 98318 DADAY/KASTAMONU&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905458633366</span>
+      "customerContact": {
+        "id": 326,
+        "country": "Turkey",
+        "city": "KASTAMONU",
+        "disrict": "DADAY",
+        "adress": "KAYABAĞI KÖYÜ MAH.KARŞI MEVKİ SOKAK NO:335 98318 DADAY/KASTAMONU",
+        "phoneNumber": 905458633366
       }
     },
     {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">498</span>,
-      <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;zumrutakbulut2&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;T15J53hOVi3470u&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">498</span>,
-        <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Zümrüt&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Akbulut&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;woman&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;1965-08-19&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">24645342730</span>
+      "id": 498,
+      "nickname": "zumrutakbulut2",
+      "password": "T15J53hOVi3470u",
+      "customerInfo": {
+        "id": 498,
+        "name": "Zümrüt",
+        "surname": "Akbulut",
+        "gender": "woman",
+        "dateOfBirth": "1965-08-19",
+        "identificationNumber": 24645342730
       },
-      <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">498</span>,
-        <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;TEKİRDAĞ&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;ÇORLU&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;AHİMEHMET KÖYÜ MAH.13. SOKAK NO:185 110944 ÇORLU/TEKİRDAĞ&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905361588334</span>
+      "customerContact": {
+        "id": 498,
+        "country": "Turkey",
+        "city": "TEKİRDAĞ",
+        "disrict": "ÇORLU",
+        "adress": "AHİMEHMET KÖYÜ MAH.13. SOKAK NO:185 110944 ÇORLU/TEKİRDAĞ",
+        "phoneNumber": 905361588334
       }
     },
     {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">442</span>,
-      <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;zuleyhaerberk53&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;HQiGMu2X&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">442</span>,
-        <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Züleyha&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Erberk&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;woman&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;1997-05-27&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">21197941850</span>
+      "id": 442,
+      "nickname": "zuleyhaerberk53",
+      "password": "HQiGMu2X",
+      "customerInfo": {
+        "id": 442,
+        "name": "Züleyha",
+        "surname": "Erberk",
+        "gender": "woman",
+        "dateOfBirth": "1997-05-27",
+        "identificationNumber": 21197941850
       },
-      <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">442</span>,
-        <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;BALIKESİR&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;BALYA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;ENVERPAŞA MAH.NALBANT ABDULLAH KANDEMİR SOKAK NO:211 83675 BALYA/BALIKESİR&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905447875840</span>
+      "customerContact": {
+        "id": 442,
+        "country": "Turkey",
+        "city": "BALIKESİR",
+        "disrict": "BALYA",
+        "adress": "ENVERPAŞA MAH.NALBANT ABDULLAH KANDEMİR SOKAK NO:211 83675 BALYA/BALIKESİR",
+        "phoneNumber": 905447875840
       }
     },
     {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">451</span>,
-      <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;zulalbarbarosoglu73&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;THMUftrA0&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">451</span>,
-        <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Zülal&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Barbarosoğlu&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;woman&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;2006-06-01&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">27927916459</span>
+      "id": 451,
+      "nickname": "zulalbarbarosoglu73",
+      "password": "THMUftrA0",
+      "customerInfo": {
+        "id": 451,
+        "name": "Zülal",
+        "surname": "Barbarosoğlu",
+        "gender": "woman",
+        "dateOfBirth": "2006-06-01",
+        "identificationNumber": 27927916459
       },
-      <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">451</span>,
-        <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;İSTANBUL&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;GAZİOSMANPAŞA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;HÜRRİYET MAH.315. SOKAK NO:696 95968 GAZİOSMANPAŞA/İSTANBUL&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905356944120</span>
+      "customerContact": {
+        "id": 451,
+        "country": "Turkey",
+        "city": "İSTANBUL",
+        "disrict": "GAZİOSMANPAŞA",
+        "adress": "HÜRRİYET MAH.315. SOKAK NO:696 95968 GAZİOSMANPAŞA/İSTANBUL",
+        "phoneNumber": 905356944120
       }
     },
     {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">372</span>,
-      <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;zubeydekarabocek78&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;4pSr48itf042&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">372</span>,
-        <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Zübeyde&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Karaböcek&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;woman&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;1979-03-12&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">28881181045</span>
+      "id": 372,
+      "nickname": "zubeydekarabocek78",
+      "password": "4pSr48itf042",
+      "customerInfo": {
+        "id": 372,
+        "name": "Zübeyde",
+        "surname": "Karaböcek",
+        "gender": "woman",
+        "dateOfBirth": "1979-03-12",
+        "identificationNumber": 28881181045
       },
-      <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">372</span>,
-        <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;AFYONKARAHİSAR&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;HOCALAR&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;YEŞİLHİSAR-CUMHURİYET MAH.CİHAN SOKAK NO:161 79640 HOCALAR/AFYONKARAHİSAR&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905348544803</span>
+      "customerContact": {
+        "id": 372,
+        "country": "Turkey",
+        "city": "AFYONKARAHİSAR",
+        "disrict": "HOCALAR",
+        "adress": "YEŞİLHİSAR-CUMHURİYET MAH.CİHAN SOKAK NO:161 79640 HOCALAR/AFYONKARAHİSAR",
+        "phoneNumber": 905348544803
       }
     }
   ]
 }
-</pre></div>
+```
+
+</details>
+
+***
 
 ######
-
-<font size="4">
 
 ```
 GET /customer/rest/api/getcustomers?type=nickname&size=5&page=2&quary=equals&table=customer_contact&column=city&start_value=ANKARA
 ```
-</font> 
 
-<!-- HTML generated using hilite.me -->
-<div style="background: #f8f8f8; overflow:auto;width:auto;border-width:.1em .1em .1em .8em;background: #f2f2f2;max-height: 400px;"><pre style="margin: 0; line-height: 125%">{
-  <span style="color: #008000; font-weight: bold">&quot;succesful&quot;</span>: <span style="color: #008000; font-weight: bold">true</span>,
-  <span style="color: #008000; font-weight: bold">&quot;code&quot;</span>: <span style="color: #BA2121">&quot;getCustomers&quot;</span>,
-  <span style="color: #008000; font-weight: bold">&quot;message&quot;</span>: <span style="color: #BA2121">&quot;The customer list has been successfully called up.&quot;</span>,
-  <span style="color: #008000; font-weight: bold">&quot;result&quot;</span>: [
+<details>
+  <summary>
+    Result Endpoint
+  </summary>
+  
+```json
+{
+  "succesful": true,
+  "code": "getCustomers",
+  "message": "The customer list has been successfully called up.",
+  "result": [
     {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">478</span>,
-      <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;julidecetin71&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;Y848cHGSKBOBMdJ&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">478</span>,
-        <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Julide&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Çetin&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;woman&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;1996-02-01&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">26516876938</span>
+      "id": 478,
+      "nickname": "julidecetin71",
+      "password": "Y848cHGSKBOBMdJ",
+      "customerInfo": {
+        "id": 478,
+        "name": "Julide",
+        "surname": "Çetin",
+        "gender": "woman",
+        "dateOfBirth": "1996-02-01",
+        "identificationNumber": 26516876938
       },
-      <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">478</span>,
-        <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;ANKARA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;ÇANKAYA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;ÜNİVERSİTELER MAH.1614. SOKAK NO:288 80988 ÇANKAYA/ANKARA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905391239034</span>
+      "customerContact": {
+        "id": 478,
+        "country": "Turkey",
+        "city": "ANKARA",
+        "disrict": "ÇANKAYA",
+        "adress": "ÜNİVERSİTELER MAH.1614. SOKAK NO:288 80988 ÇANKAYA/ANKARA",
+        "phoneNumber": 905391239034
       }
     },
     {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">463</span>,
-      <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;julideozkok9&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;EQuVtT7wD9oIUOW&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">463</span>,
-        <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Julide&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Özkök&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;woman&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;2003-09-28&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">23265857397</span>
+      "id": 463,
+      "nickname": "julideozkok9",
+      "password": "EQuVtT7wD9oIUOW",
+      "customerInfo": {
+        "id": 463,
+        "name": "Julide",
+        "surname": "Özkök",
+        "gender": "woman",
+        "dateOfBirth": "2003-09-28",
+        "identificationNumber": 23265857397
       },
-      <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">463</span>,
-        <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;ANKARA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;ETİMESGUT&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;GÜZELKENT MAH.720. SOKAK NO:362 125556 ETİMESGUT/ANKARA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905442818001</span>
+      "customerContact": {
+        "id": 463,
+        "country": "Turkey",
+        "city": "ANKARA",
+        "disrict": "ETİMESGUT",
+        "adress": "GÜZELKENT MAH.720. SOKAK NO:362 125556 ETİMESGUT/ANKARA",
+        "phoneNumber": 905442818001
       }
     },
     {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">144</span>,
-      <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;kadirsozeri56&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;Sx2WbXKU6&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">144</span>,
-        <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Kadir &quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Sözeri&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;man&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;1969-06-10&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">27229413142</span>
+      "id": 144,
+      "nickname": "kadirsozeri56",
+      "password": "Sx2WbXKU6",
+      "customerInfo": {
+        "id": 144,
+        "name": "Kadir ",
+        "surname": "Sözeri",
+        "gender": "man",
+        "dateOfBirth": "1969-06-10",
+        "identificationNumber": 27229413142
       },
-      <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">144</span>,
-        <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;ANKARA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;KEÇİÖREN&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;ESERTEPE MAH.303. SOKAK NO:50 81084 KEÇİÖREN/ANKARA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905498780620</span>
+      "customerContact": {
+        "id": 144,
+        "country": "Turkey",
+        "city": "ANKARA",
+        "disrict": "KEÇİÖREN",
+        "adress": "ESERTEPE MAH.303. SOKAK NO:50 81084 KEÇİÖREN/ANKARA",
+        "phoneNumber": 905498780620
       }
     },
     {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">455</span>,
-      <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;nazanbasoglu78&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;l7HpO3y0V&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">455</span>,
-        <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Nazan&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Başoğlu&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;woman&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;1975-04-20&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">28895114221</span>
+      "id": 455,
+      "nickname": "nazanbasoglu78",
+      "password": "l7HpO3y0V",
+      "customerInfo": {
+        "id": 455,
+        "name": "Nazan",
+        "surname": "Başoğlu",
+        "gender": "woman",
+        "dateOfBirth": "1975-04-20",
+        "identificationNumber": 28895114221
       },
-      <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">455</span>,
-        <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;ANKARA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;ALTINDAĞ&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;ALEMDAĞ MAH.1042/1 SOKAK NO:799 80827 ALTINDAĞ/ANKARA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905377225829</span>
+      "customerContact": {
+        "id": 455,
+        "country": "Turkey",
+        "city": "ANKARA",
+        "disrict": "ALTINDAĞ",
+        "adress": "ALEMDAĞ MAH.1042/1 SOKAK NO:799 80827 ALTINDAĞ/ANKARA",
+        "phoneNumber": 905377225829
       }
     },
     {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">170</span>,
-      <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;necibbademci36&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;y3CUlL5BfXeRIBOW&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">170</span>,
-        <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Necib &quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Bademci&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;man&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;1958-09-17&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">11746434403</span>
+      "id": 170,
+      "nickname": "necibbademci36",
+      "password": "y3CUlL5BfXeRIBOW",
+      "customerInfo": {
+        "id": 170,
+        "name": "Necib ",
+        "surname": "Bademci",
+        "gender": "man",
+        "dateOfBirth": "1958-09-17",
+        "identificationNumber": 11746434403
       },
-      <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-        <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">170</span>,
-        <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;ANKARA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;KIZILCAHAMAM&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;GÜNEYSARAY KÖYÜ MAH.KÖYÜN KENDİSİ SOKAK NO:895 123962 KIZILCAHAMAM/ANKARA&quot;</span>,
-        <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905387578561</span>
+      "customerContact": {
+        "id": 170,
+        "country": "Turkey",
+        "city": "ANKARA",
+        "disrict": "KIZILCAHAMAM",
+        "adress": "GÜNEYSARAY KÖYÜ MAH.KÖYÜN KENDİSİ SOKAK NO:895 123962 KIZILCAHAMAM/ANKARA",
+        "phoneNumber": 905387578561
       }
     }
   ]
 }
-</pre></div>
+```
+
+</details>
+
+***
 
 ######
 
-<font size="4">
+#### 2. To Call Customers By ID
 
 ```
 GET /customer/rest/api/getcustomer
 ```
-</font>
-
-<font size="2">
 
 <table>
   <tr style="background-color:#f0f0ff">
@@ -597,88 +607,135 @@ GET /customer/rest/api/getcustomer
   
 </table>
 
-</font>
- 
 ######
 
-<font size="4">
+***
 
 ```
 GET /customer/rest/api/getcustomer?id=25
 ```
-</font>
 
-<!-- HTML generated using hilite.me -->
-<div style="background: #f8f8f8; overflow:auto;width:auto;border-width:.1em .1em .1em .8em;background: #f2f2f2;max-height: 400px;"><pre style="margin: 0; line-height: 125%">{
-  <span style="color: #008000; font-weight: bold">&quot;succesful&quot;</span>: <span style="color: #008000; font-weight: bold">true</span>,
-  <span style="color: #008000; font-weight: bold">&quot;code&quot;</span>: <span style="color: #BA2121">&quot;getCustomerById&quot;</span>,
-  <span style="color: #008000; font-weight: bold">&quot;message&quot;</span>: <span style="color: #BA2121">&quot;Customer ID 25 was successfully returned.&quot;</span>,
-  <span style="color: #008000; font-weight: bold">&quot;result&quot;</span>: {
-    <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">25</span>,
-    <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;ertugrulakyuz50&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;YhM4QF86H&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">25</span>,
-      <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Ertuğrul Ali&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Akyüz&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;man&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;1997-04-11&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">13736613104</span>
+<details>
+  <summary>
+    Result Endpoint
+  </summary>
+  
+```json
+{
+  "succesful": true,
+  "code": "getCustomerById",
+  "message": "Customer ID 25 was successfully returned.",
+  "result": {
+    "id": 25,
+    "nickname": "ertugrulakyuz50",
+    "password": "YhM4QF86H",
+    "customerInfo": {
+      "id": 25,
+      "name": "Ertuğrul Ali",
+      "surname": "Akyüz",
+      "gender": "man",
+      "dateOfBirth": "1997-04-11",
+      "identificationNumber": 13736613104
     },
-    <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">25</span>,
-      <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;ERZURUM&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;YAKUTİYE&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;ÖMER NASUHİ BİLMEN MAH.FERAH SOKAK NO:883 119134 YAKUTİYE/ERZURUM&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905422950976</span>
+    "customerContact": {
+      "id": 25,
+      "country": "Turkey",
+      "city": "ERZURUM",
+      "disrict": "YAKUTİYE",
+      "adress": "ÖMER NASUHİ BİLMEN MAH.FERAH SOKAK NO:883 119134 YAKUTİYE/ERZURUM",
+      "phoneNumber": 905422950976
     }
   }
 }
-</pre></div>
+```
+
+</details>
+
+***
 ######
 
-<font size="4">
+#### 3. To Add Customer
 
 ```
 POST /customer/rest/api/addcustomer
 ```
-</font>
 
-<!-- HTML generated using hilite.me -->
-<div style="background: #f8f8f8; overflow:auto;width:auto;border-width:.1em .1em .1em .8em;background: #f2f2f2;max-height: 400px;"><pre style="margin: 0; line-height: 125%">{
-  <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">0</span>,
-  <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;string&quot;</span>,
-  <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;string&quot;</span>,
-  <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-    <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">0</span>,
-    <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;string&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;string&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;string&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;yyyy-mm-dd&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">0</span>
+<details>
+  <summary>
+    Customer Structure
+  </summary>
+  
+```json
+{
+  "id": 0,
+  "nickname": "string",
+  "password": "string",
+  "customerInfo": {
+    "id": 0,
+    "name": "string",
+    "surname": "string",
+    "gender": "string",
+    "dateOfBirth": "yyyy-mm-dd",
+    "identificationNumber": 0
   },
-  <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-    <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">0</span>,
-    <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;string&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;string&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;string&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;string&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">0</span>
+  "customerContact": {
+    "id": 0,
+    "country": "string",
+    "city": "string",
+    "disrict": "string",
+    "adress": "string",
+    "phoneNumber": 0
   }
 }
-</pre></div>
+```
+
+</details>
+
+<details>
+  <summary>
+    Result Endpoint
+  </summary>
+  
+```json
+{
+  "succesful": true,
+  "code": "addCustomer",
+  "message": "Customer registration successful.",
+  "result": {
+    "id": 0,
+    "nickname": "gurkanguldas12",
+    "password": "$2a$10$lDMe7/ENhpnVkW28XCLKHeAG7KU5v9HddqiZYLH4JOWGc2gzIe66G",
+    "customerInfo": {
+      "id": 0,
+      "name": "Bekir Gurkan",
+      "surname": "Guldas",
+      "gender": "man",
+      "dateOfBirth": "1998-06-27",
+      "identificationNumber": 12345678904
+    },
+    "customerContact": {
+      "id": 0,
+      "country": "Turkey",
+      "city": "Istanbul",
+      "disrict": "Pendik",
+      "adress": "Batı Mah.",
+      "phoneNumber": 905455454545
+    }
+  }
+}
+```
+
+</details>
 
 ######
 
-<font size="4">
+######
+
+#### 4. To Delete Customers By ID
 
 ```
 DELETE /customer/rest/api/deletecustomer
 ```
-</font>
-
-<font size="2">
 
 <table>
   <tr style="background-color:#f0f0ff">
@@ -696,44 +753,48 @@ DELETE /customer/rest/api/deletecustomer
   
 </table>
 
-</font>
- 
 ######
 
-<font size="4">
+***
 
 ```
 DELETE /customer/rest/api/deletecustomer?id=20
 ```
-</font>
 
-
-
-<!-- HTML generated using hilite.me -->
-<div style="background: #f8f8f8; overflow:auto;width:auto;border-width:.1em .1em .1em .8em;background: #f2f2f2;max-height: 400px;"><pre style="margin: 0; line-height: 125%">{
-  <span style="color: #008000; font-weight: bold">&quot;succesful&quot;</span>: <span style="color: #008000; font-weight: bold">true</span>,
-  <span style="color: #008000; font-weight: bold">&quot;code&quot;</span>: <span style="color: #BA2121">&quot;deleteCustomerById&quot;</span>,
-  <span style="color: #008000; font-weight: bold">&quot;message&quot;</span>: <span style="color: #BA2121">&quot;The customer with ID number 20 was deleted.&quot;</span>,
-  <span style="color: #008000; font-weight: bold">&quot;result&quot;</span>: {
-    <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">20</span>,
-    <span style="color: #008000; font-weight: bold">&quot;nickname&quot;</span>: <span style="color: #BA2121">&quot;hurkansozeri71&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;password&quot;</span>: <span style="color: #BA2121">&quot;044x1Yt0eoQ&quot;</span>,
-    <span style="color: #008000; font-weight: bold">&quot;customerInfo&quot;</span>: {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">20</span>,
-      <span style="color: #008000; font-weight: bold">&quot;name&quot;</span>: <span style="color: #BA2121">&quot;Hürkan İhvan&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;surname&quot;</span>: <span style="color: #BA2121">&quot;Sözeri&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;gender&quot;</span>: <span style="color: #BA2121">&quot;man&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;dateOfBirth&quot;</span>: <span style="color: #BA2121">&quot;1993-07-05&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;identificationNumber&quot;</span>: <span style="color: #666666">21831255161</span>
+<details>
+  <summary>
+    Result Endpoint
+  </summary>
+  
+```json
+{
+  "succesful": true,
+  "code": "deleteCustomerById",
+  "message": "The customer with ID number 20 was deleted.",
+  "result": {
+    "id": 20,
+    "nickname": "hurkansozeri71",
+    "password": "044x1Yt0eoQ",
+    "customerInfo": {
+      "id": 20,
+      "name": "Hürkan İhvan",
+      "surname": "Sözeri",
+      "gender": "man",
+      "dateOfBirth": "1993-07-05",
+      "identificationNumber": 21831255161
     },
-    <span style="color: #008000; font-weight: bold">&quot;customerContact&quot;</span>: {
-      <span style="color: #008000; font-weight: bold">&quot;id&quot;</span>: <span style="color: #666666">20</span>,
-      <span style="color: #008000; font-weight: bold">&quot;country&quot;</span>: <span style="color: #BA2121">&quot;Turkey&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;city&quot;</span>: <span style="color: #BA2121">&quot;MANİSA&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;disrict&quot;</span>: <span style="color: #BA2121">&quot;AHMETLİ&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;adress&quot;</span>: <span style="color: #BA2121">&quot;GÖKKAYA-SÜLEYMAN SUAT MAH.ASMALI SOKAK NO:447 103100 AHMETLİ/MANİSA&quot;</span>,
-      <span style="color: #008000; font-weight: bold">&quot;phoneNumber&quot;</span>: <span style="color: #666666">905387346569</span>
+    "customerContact": {
+      "id": 20,
+      "country": "Turkey",
+      "city": "MANİSA",
+      "disrict": "AHMETLİ",
+      "adress": "GÖKKAYA-SÜLEYMAN SUAT MAH.ASMALI SOKAK NO:447 103100 AHMETLİ/MANİSA",
+      "phoneNumber": 905387346569
     }
   }
 }
-</pre></div>
+```
+
+</details>
+
+***
