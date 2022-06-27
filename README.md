@@ -1,5 +1,5 @@
 
-## Endpoint
+## Customer API Endpoints
 #### 1. To Call All Customers
 
 ```
@@ -593,16 +593,16 @@ GET /customer/rest/api/getcustomer
 
 <table>
   <tr style="background-color:#f0f0ff">
-    <th>Name</th>
-    <th>Type</th>
-    <th>Mandatory</th>
-    <th>Values</th>
+    <th><sub>Name</sub></th>
+    <th><sub>Type</sub></th>
+    <th><sub>Mandatory</sub></th>
+    <th><sub>Values</sub></th>
   </tr>
   <tr>
-    <td>id</td>
-    <td>Long</td>
-    <td>true</td>
-    <td>1 - ∞</td>
+    <td><sub>id</sub></td>
+    <td><sub>Long</sub></td>
+    <td><sub>true</sub></td>
+    <td><sub>1 - ∞</sub></td>
   </tr>
   
 </table>
@@ -739,16 +739,16 @@ DELETE /customer/rest/api/deletecustomer
 
 <table>
   <tr style="background-color:#f0f0ff">
-    <th>Name</th>
-    <th>Type</th>
-    <th>Mandatory</th>
-    <th>Values</th>
+    <th><sub>Name</sub></th>
+    <th><sub>Type</sub></th>
+    <th><sub>Mandatory</sub></th>
+    <th><sub>Values</sub></th>
   </tr>
   <tr>
-    <td>id</td>
-    <td>Long</td>
-    <td>true</td>
-    <td>1 - ∞</td>
+    <td><sub>id</sub></td>
+    <td><sub>Long</sub></td>
+    <td><sub>true</sub></td>
+    <td><sub>1 - ∞</sub></td>
   </tr>
   
 </table>
