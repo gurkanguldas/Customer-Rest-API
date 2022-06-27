@@ -6,7 +6,7 @@
 GET /customer/rest/api/getcustomers
 ```
 
-<sup>
+
 <table>
   <tr style="background-color:#f0f0ff">
     <th>Name</th>
@@ -20,12 +20,12 @@ GET /customer/rest/api/getcustomers
     <td>String</td>
     <td>false</td>
     <td>id</td>
-    <td>id, nickname, customerInfo.name, customerInfo.surname,<br /> 
+    <td><sub>id, nickname, customerInfo.name, customerInfo.surname,<br /> 
         customerInfo.gender, customerInfo.dateOfBirth,<br />
         customerInfo.identificationNumber, customerContact.country,<br />
         customerContact.city, customerContact.disrict,<br />
         customerContact.adress, customerContact.phoneNumber
-        </td>
+        </sub></td>
   </tr>
   <tr style="background-color:#f0f0ff">
     <td>descending</td>
@@ -86,7 +86,7 @@ GET /customer/rest/api/getcustomers
     <td>Everything</td>
   </tr>
 </table>
-</sup>
+
 ```
 GET /customer/rest/api/getcustomers
 ```
