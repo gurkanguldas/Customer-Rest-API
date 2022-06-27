@@ -22,7 +22,7 @@ GET /customer/rest/api/getcustomers
     <td><sub>id</sub></td>
     <td>
     <sub>
-        id, nickname, customerInfo.name, customerInfo.surname, customerInfo.gender, <br />customerInfo.dateOfBirth,
+        nickname, customerInfo.name, customerInfo.surname, customerInfo.gender, <br />customerInfo.dateOfBirth,
         customerInfo.identificationNumber,<br /> customerContact.country,
         customerContact.city, customerContact.disrict,<br />
         customerContact.adress, customerContact.phoneNumber
