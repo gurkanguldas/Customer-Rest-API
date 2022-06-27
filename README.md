@@ -20,10 +20,10 @@ GET /customer/rest/api/getcustomers
     <td>String</td>
     <td>false</td>
     <td>id</td>
-    <td>id, nickname, customerInfo.name, customerInfo.surname,<br/> 
-        customerInfo.gender, customerInfo.dateOfBirth,<br/>
-        customerInfo.identificationNumber, customerContact.country,<br/>
-        customerContact.city, customerContact.disrict,<br/>
+    <td>id, nickname, customerInfo.name, customerInfo.surname,<br /> 
+        customerInfo.gender, customerInfo.dateOfBirth,<br />
+        customerInfo.identificationNumber, customerContact.country,<br />
+        customerContact.city, customerContact.disrict,<br />
         customerContact.adress, customerContact.phoneNumber
         </td>
   </tr>
