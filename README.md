@@ -30,7 +30,7 @@ GET /customer/rest/api/getcustomers
 ```
 
 </font> 
-<font size="2">
+<font size="1">
 
 <table>
   <tr style="background-color:#f0f0ff">
