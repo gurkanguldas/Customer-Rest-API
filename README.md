@@ -9,81 +9,84 @@ GET /customer/rest/api/getcustomers
 
 <table>
   <tr style="background-color:#f0f0ff">
-    <th>Name</th>
-    <th>Type</th>
-    <th>Mandatory</th>
-    <th>Default Value</th>
-    <th>Other Values</th>
+    <th><sub>Name</sub></th>
+    <th><sub>Type</sub></th>
+    <th><sub>Mandatory</sub></th>
+    <th><sub>Default Value</sub></th>
+    <th><sub>Other Values</sub></th>
   </tr>
   <tr>
-    <td>sortType</td>
-    <td>String</td>
-    <td>false</td>
-    <td>id</td>
-    <td><sub>id, nickname, customerInfo.name, customerInfo.surname,<br /> 
+    <td><sub>sortType</sub></td>
+    <td><sub>String</sub></td>
+    <td><sub>false</sub></td>
+    <td><sub>id</sub></td>
+    <td>
+    <sub>
+        id, nickname, customerInfo.name, customerInfo.surname,<br /> 
         customerInfo.gender, customerInfo.dateOfBirth,<br />
         customerInfo.identificationNumber, customerContact.country,<br />
         customerContact.city, customerContact.disrict,<br />
         customerContact.adress, customerContact.phoneNumber
+    </sub>
+    </td>
+  </tr>
+  <tr style="background-color:#f0f0ff">
+    <td><sub>descending</sub></td>
+    <td><sub>boolean</sub></td>
+    <td><sub>false</sub></td>
+    <td><sub>false</sub></td>
+    <td><sub>true, false</sub></td>
+  </tr>
+  <tr>
+    <td><sub>pageSize</sub></td>
+    <td><sub>int</sub></td>
+    <td><sub>false</sub></td>
+    <td><sub>10</sub></td>
+    <td><sub>5, 10, 25, 50, 100 ...</sub></td>
+  </tr>
+  <tr style="background-color:#f0f0ff">
+    <td><sub>pageNo</sub></td>
+    <td><sub>int</sub></td>
+    <td><sub>false</sub></td>
+    <td><sub>0</sub></td>
+    <td><sub>0 - ∞</sub></td>
+  </tr>
+  <tr>
+    <td><sub>quary</sub></td>
+    <td><sub>String</sub></td>
+    <td><sub>false</sub></td>
+    <td><sub>greater_than_or_equal</sub></td>
+    <td><sub>between, like, in, equals, not_equals,<br> greater_than_or_equal, less_than_or_equal</sub></td>
+  </tr>
+  <tr style="background-color:#f0f0ff">
+    <td><sub>table</sub></td>
+    <td><sub>String</sub></td>
+    <td><sub>false</sub></td>
+    <td><sub>customer</sub></td>
+    <td><sub>customer, customer_information, customer_contact</sub></td>
+  </tr>
+  <tr>
+    <td><sub>column</sub></td>
+    <td><sub>String</sub></td>
+    <td><sub>false</sub></td>
+    <td><sub>id</sub></td>
+    <td><sub>id, nickname, name, surname, gender, dateOfBirth,<br>
+        identificationNumber, country,city, disrict,adress, phoneNumber
         </sub></td>
   </tr>
   <tr style="background-color:#f0f0ff">
-    <td>descending</td>
-    <td>boolean</td>
-    <td>false</td>
-    <td>false</td>
-    <td>true, false</td>
+    <td><sub>value1</sub></td>
+    <td><sub>Object</sub></td>
+    <td><sub>false</sub></td>
+    <td><sub>0</sub></td>
+    <td><sub>Everything</sub></td>
   </tr>
   <tr>
-    <td>pageSize</td>
-    <td>int</td>
-    <td>false</td>
-    <td>10</td>
-    <td>5, 10, 25, 50, 100 ...</td>
-  </tr>
-  <tr style="background-color:#f0f0ff">
-    <td>pageNo</td>
-    <td>int</td>
-    <td>false</td>
-    <td>0</td>
-    <td>0 - ∞</td>
-  </tr>
-  <tr>
-    <td>quary</td>
-    <td>String</td>
-    <td>false</td>
-    <td>greater_than_or_equal</td>
-    <td>between, like, in, equals, not_equals,<br> greater_than_or_equal, less_than_or_equal</td>
-  </tr>
-  <tr style="background-color:#f0f0ff">
-    <td>table</td>
-    <td>String</td>
-    <td>false</td>
-    <td>customer</td>
-    <td>customer, customer_information, customer_contact</td>
-  </tr>
-  <tr>
-    <td>column</td>
-    <td>String</td>
-    <td>false</td>
-    <td>id</td>
-    <td>id, nickname, name, surname, gender, dateOfBirth,<br>
-        identificationNumber, country,city, disrict,adress, phoneNumber
-        </td>
-  </tr>
-  <tr style="background-color:#f0f0ff">
-    <td>value1</td>
-    <td>Object</td>
-    <td>false</td>
-    <td>0</td>
-    <td>Everything</td>
-  </tr>
-  <tr>
-    <td>value2</td>
-    <td>Object</td>
-    <td>false</td>
-    <td>0</td>
-    <td>Everything</td>
+    <td><sub>value2</sub></td>
+    <td><sub>Object</sub></td>
+    <td><sub>false</sub></td>
+    <td><sub>0</sub></td>
+    <td><sub>Everything</sub></td>
   </tr>
 </table>
 
