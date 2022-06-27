@@ -1,4 +1,24 @@
 
+## Customer Rest API
+
+#### Libraries Used
+
+* Spring Web
+* Spring Data JPA
+* MySql Connector
+* Open API
+* Model Mapper
+* Lombok
+* Spring Actuator
+* Spring Security
+* JSON Web Token
+
+
+## JSON Web Token For Spring
+#### Generate Token
+![](https://www.javainuse.com/62-2-min.JPG)
+#### Validate Token
+![](https://www.javainuse.com/62-3-min.JPG)
 ## Customer API Endpoints
 #### 1. To Call All Customers
 
