@@ -1,0 +1,394 @@
+{
+	"info": {
+		"_postman_id": "68d52b23-7bd5-43a2-8d56-ff805eb66aa4",
+		"name": "CustomerRequests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "16801255"
+	},
+	"item": [
+		{
+			"name": "CustomerFilters",
+			"item": [
+				{
+					"name": "Sorting",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJndXJrYW5ndWxkYXMiLCJleHAiOjE2NTcwMzE5MjAsImlhdCI6MTY1NzAxMzkyMH0.b01HIWkmp_LU_YrPlSWmbOupxSixQxR1cklpqNntAIo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customer/rest/api/getcustomers?type=customerInfo.name&descending=false",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"rest",
+								"api",
+								"getcustomers"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "customerInfo.name",
+									"description": "id, nickname, customerInfo.name, customerInfo.surname, customerInfo.gender, customerInfo.dateOfBirth, customerInfo.identificationNumber, customerContact.country, customerContact.city, customerContact.disrict, customerContact.adress, customerContact.phoneNumber"
+								},
+								{
+									"key": "descending",
+									"value": "false",
+									"description": "true, false"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Padding",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJndXJrYW5ndWxkYXMiLCJleHAiOjE2NTcwMzE5MjAsImlhdCI6MTY1NzAxMzkyMH0.b01HIWkmp_LU_YrPlSWmbOupxSixQxR1cklpqNntAIo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customer/rest/api/getcustomers?size=20&page=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"rest",
+								"api",
+								"getcustomers"
+							],
+							"query": [
+								{
+									"key": "size",
+									"value": "20",
+									"description": "5, 10, 25, 50, 100 ..."
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "0 - ∞"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SortingAndPadding",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJndXJrYW5ndWxkYXMiLCJleHAiOjE2NTcwMzE5MjAsImlhdCI6MTY1NzAxMzkyMH0.b01HIWkmp_LU_YrPlSWmbOupxSixQxR1cklpqNntAIo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customer/rest/api/getcustomers?type=customerInfo.name&descending=true&size=10&page=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"rest",
+								"api",
+								"getcustomers"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "customerInfo.name",
+									"description": "id, nickname, customerInfo.name, customerInfo.surname, customerInfo.gender, customerInfo.dateOfBirth, customerInfo.identificationNumber, customerContact.country, customerContact.city, customerContact.disrict, customerContact.adress, customerContact.phoneNumber"
+								},
+								{
+									"key": "descending",
+									"value": "true",
+									"description": "true, false"
+								},
+								{
+									"key": "size",
+									"value": "10",
+									"description": "5, 10, 25, 50, 100 ..."
+								},
+								{
+									"key": "page",
+									"value": "0",
+									"description": "0 - ∞"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Quary",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJndXJrYW5ndWxkYXMiLCJleHAiOjE2NTcwMzE5MjAsImlhdCI6MTY1NzAxMzkyMH0.b01HIWkmp_LU_YrPlSWmbOupxSixQxR1cklpqNntAIo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customer/rest/api/getcustomers?quary=like&table=customer_information&column=name&start_value=g%25&end_value=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"rest",
+								"api",
+								"getcustomers"
+							],
+							"query": [
+								{
+									"key": "quary",
+									"value": "like",
+									"description": "between, like, in, equals, not_equals, greater_than_or_equal, less_than_or_equal"
+								},
+								{
+									"key": "table",
+									"value": "customer_information",
+									"description": "customer, customer_information, customer_contact"
+								},
+								{
+									"key": "column",
+									"value": "name",
+									"description": "id, nickname, name, surname, gender, dateOfBirth, identificationNumber, country,city, disrict,adress, phoneNumber"
+								},
+								{
+									"key": "start_value",
+									"value": "g%25",
+									"description": "Everything"
+								},
+								{
+									"key": "end_value",
+									"value": "0",
+									"description": "Everything (Only Between)"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "QuarySortingAndPadding",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJndXJrYW5ndWxkYXMiLCJleHAiOjE2NTcwMzE5MjAsImlhdCI6MTY1NzAxMzkyMH0.b01HIWkmp_LU_YrPlSWmbOupxSixQxR1cklpqNntAIo"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/customer/rest/api/getcustomers?type=customerInfo.name&descending=false&size=10&page=1&quary=like&table=customer_information&column=name&start_value=g%25&end_value=0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"customer",
+								"rest",
+								"api",
+								"getcustomers"
+							],
+							"query": [
+								{
+									"key": "type",
+									"value": "customerInfo.name",
+									"description": "id, nickname, customerInfo.name, customerInfo.surname, customerInfo.gender, customerInfo.dateOfBirth, customerInfo.identificationNumber, customerContact.country, customerContact.city, customerContact.disrict, customerContact.adress, customerContact.phoneNumber"
+								},
+								{
+									"key": "descending",
+									"value": "false",
+									"description": "true, false"
+								},
+								{
+									"key": "size",
+									"value": "10",
+									"description": "5, 10, 25, 50, 100 ..."
+								},
+								{
+									"key": "page",
+									"value": "1",
+									"description": "0 - ∞"
+								},
+								{
+									"key": "quary",
+									"value": "like",
+									"description": "between, like, in, equals, not_equals, greater_than_or_equal, less_than_or_equal"
+								},
+								{
+									"key": "table",
+									"value": "customer_information",
+									"description": "customer, customer_information, customer_contact"
+								},
+								{
+									"key": "column",
+									"value": "name",
+									"description": "id, nickname, name, surname, gender, dateOfBirth, identificationNumber, country,city, disrict,adress, phoneNumber"
+								},
+								{
+									"key": "start_value",
+									"value": "g%25",
+									"description": "Everything"
+								},
+								{
+									"key": "end_value",
+									"value": "0",
+									"description": "Everything (Only Between)"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Create Customer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"nickname\": \"gurkanguldas\",\r\n    \"password\": \"123456\",\r\n    \"customerInfo\": {\r\n        \"id\": 0,\r\n        \"name\": \"Bekir Gurkan\",\r\n        \"surname\": \"Guldas\",\r\n        \"gender\": \"man\",\r\n        \"dateOfBirth\": \"1998-04-04\",\r\n        \"identificationNumber\": 12345678904\r\n    },\r\n    \"customerContact\": {\r\n        \"id\": 0,\r\n        \"country\": \"Turkey\",\r\n        \"city\": \"Istanbul\",\r\n        \"disrict\": \"Pendik\",\r\n        \"adress\": \"Yenisehir\",\r\n        \"phoneNumber\": 905400000000\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/customer/rest/api/addcustomer"
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"nickname\": \"gurkanguldas\",\r\n  \"password\": \"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/customer/login/authenticate"
+			},
+			"response": []
+		},
+		{
+			"name": "Customer By ID",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJndXJrYW5ndWxkYXMiLCJleHAiOjE2NTcwMzE5MjAsImlhdCI6MTY1NzAxMzkyMH0.b01HIWkmp_LU_YrPlSWmbOupxSixQxR1cklpqNntAIo"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customer/rest/api/getcustomer?id=501",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"rest",
+						"api",
+						"getcustomer"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "501"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Customers",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJndXJrYW5ndWxkYXMiLCJleHAiOjE2NTcwMzE5MjAsImlhdCI6MTY1NzAxMzkyMH0.b01HIWkmp_LU_YrPlSWmbOupxSixQxR1cklpqNntAIo"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/customer/rest/api/getcustomers"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Customer",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJndXJrYW5ndWxkYXNzIiwiZXhwIjoxNjU3MDI4ODY3LCJpYXQiOjE2NTcwMTA4Njd9.vEG57Xvtq8895bTM7xyyz9kp7w0Ad0mUMxNgDtpQGp4"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/customer/rest/api/deletecustomer?id=502",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"rest",
+						"api",
+						"deletecustomer"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "502"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
