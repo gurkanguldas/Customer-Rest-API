@@ -12,14 +12,12 @@ import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
 @Component
-public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint, Serializable
-{
+public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint, Serializable {
 	private static final long serialVersionUID = 310506302546750043L;
 
 	@Override
 	public void commence(HttpServletRequest request, HttpServletResponse response,
-						 AuthenticationException authException)throws IOException, ServletException 
-	{
+			AuthenticationException authException) throws IOException, ServletException {
 		response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "User not found!!!");
 	}
 }

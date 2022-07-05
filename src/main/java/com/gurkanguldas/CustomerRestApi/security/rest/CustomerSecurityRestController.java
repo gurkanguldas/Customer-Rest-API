@@ -15,32 +15,30 @@ import com.gurkanguldas.CustomerRestApi.security.data.CustomerLogin;
 import com.gurkanguldas.CustomerRestApi.security.jwt.JwtTokenUtil;
 import com.gurkanguldas.CustomerRestApi.security.service.CustomerDetailsService;
 
-
 @CrossOrigin
 @RestController
 @RequestMapping("/customer/login")
-public class CustomerSecurityRestController implements ICustomerSecurityRestController 
-{
+public class CustomerSecurityRestController implements ICustomerSecurityRestController {
 	@Autowired
-    private AuthenticationManager authenticationManager;
+	private AuthenticationManager authenticationManager;
 
-    @Autowired
-    private JwtTokenUtil jwtTokenUtil;
+	@Autowired
+	private JwtTokenUtil jwtTokenUtil;
 
-    @Autowired
-    private CustomerDetailsService userDetailsService;
-    
-    @Override
-    @RequestMapping(value = "/authenticate", method = RequestMethod.POST)
-    public ResponseEntity<?> createAuthenticationToken(@RequestBody CustomerLogin customer) throws Exception 
-    {
-        authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(customer.getNickname(), customer.getPassword()));
-        
-        UserDetails userDetails = userDetailsService.loadUserByUsername(customer.getNickname());
+	@Autowired
+	private CustomerDetailsService userDetailsService;
 
-        customer.setToken(jwtTokenUtil.generateToken(userDetails));
-        
-        return ResponseEntity.ok().body(customer);
-    }
-    
+	@Override
+	@RequestMapping(value = "/authenticate", method = RequestMethod.POST)
+	public ResponseEntity<?> createAuthenticationToken(@RequestBody CustomerLogin customer) throws Exception {
+		
+		authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(customer.getNickname(), customer.getPassword()));
+
+		UserDetails userDetails = userDetailsService.loadUserByUsername(customer.getNickname());
+
+		customer.setToken(jwtTokenUtil.generateToken(userDetails));
+
+		return ResponseEntity.ok().body(customer);
+	}
+
 }

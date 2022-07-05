@@ -12,29 +12,24 @@ import com.gurkanguldas.CustomerRestApi.data.repository.filter.CustomSpecificati
 import com.gurkanguldas.CustomerRestApi.data.repository.filter.SpecificationFilter;
 
 @Configuration
-public class ServiceConfigurationBean
-{
-    @Bean
-    public ModelMapper modelMapper()
-    {
-        return new ModelMapper();
-    }
-    
-    @Bean
-    public PasswordEncoder passwordEncoder() 
-	{
-        return new BCryptPasswordEncoder();
-    }
-    
-    @Bean
-    public ICustomerExternalService customExternalService()
-    {
-    	return new CustomExternalService();
-    }
-    
-    @Bean
-    public SpecificationFilter<?> customSpecificationFilter()
-    {
-    	return new CustomSpecificationFilter();
-    }
+public class ServiceConfigurationBean {
+	@Bean
+	public ModelMapper modelMapper() {
+		return new ModelMapper();
+	}
+
+	@Bean
+	public PasswordEncoder passwordEncoder() {
+		return new BCryptPasswordEncoder();
+	}
+
+	@Bean
+	public ICustomerExternalService customExternalService() {
+		return new CustomExternalService();
+	}
+
+	@Bean
+	public SpecificationFilter<?> customSpecificationFilter() {
+		return new CustomSpecificationFilter();
+	}
 }

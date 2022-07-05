@@ -23,61 +23,44 @@ import com.gurkanguldas.CustomerRestApi.security.service.CustomerDetailsService;
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter
-{
-    @Autowired
-    private JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
+public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+	@Autowired
+	private JwtAuthenticationEntryPoint jwtAuthenticationEntryPoint;
 
-    @Autowired
-    private CustomerDetailsService customerDetailsService;
+	@Autowired
+	private CustomerDetailsService customerDetailsService;
 
-    @Autowired
-    private JwtRequestFilter jwtRequestFilter;
+	@Autowired
+	private JwtRequestFilter jwtRequestFilter;
 
-    @Autowired
-    private PasswordEncoder bcryptEncoder;
-    
-    @Bean
-    @Override
-    public AuthenticationManager authenticationManagerBean() throws Exception {
-        return super.authenticationManagerBean();
-    }
-    
-    @Autowired
-    public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception 
-    {
-        auth.userDetailsService(customerDetailsService).passwordEncoder(bcryptEncoder);
-    }
-    
-    @Override
-    public void configure(WebSecurity web) {
-        web.ignoring().antMatchers("/swagger-ui/**",
-                "/v3/api-docs/**",
-                "/asm-swagger.html",
-                "/api-docs/**",
-                "/api-docs/swagger-config",
-                "/asm-swagger");
-    }
-    @Override
-    protected void configure(HttpSecurity httpSecurity) throws Exception {
-    	
-        httpSecurity.cors()
-        			.and()
-        			.csrf()
-        			.disable()
-        			.authorizeRequests()
-        			.antMatchers("/customer/login/authenticate", "/customer/rest/api/addcustomer")
-        			.permitAll()
-        			.anyRequest()
-        			.authenticated()
-                    .and()
-                    .exceptionHandling()
-                    .authenticationEntryPoint(jwtAuthenticationEntryPoint)
-        			.and()
-        			.sessionManagement()
-        			.sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-        
+	@Autowired
+	private PasswordEncoder bcryptEncoder;
 
-        httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
-    }
+	@Bean
+	@Override
+	public AuthenticationManager authenticationManagerBean() throws Exception {
+		return super.authenticationManagerBean();
+	}
+
+	@Autowired
+	public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+		auth.userDetailsService(customerDetailsService).passwordEncoder(bcryptEncoder);
+	}
+
+	@Override
+	public void configure(WebSecurity web) {
+		web.ignoring().antMatchers("/swagger-ui/**", "/v3/api-docs/**", "/asm-swagger.html", "/api-docs/**",
+				"/api-docs/swagger-config", "/asm-swagger");
+	}
+
+	@Override
+	protected void configure(HttpSecurity httpSecurity) throws Exception {
+
+		httpSecurity.cors().and().csrf().disable().authorizeRequests()
+				.antMatchers("/customer/login/authenticate", "/customer/rest/api/addcustomer").permitAll().anyRequest()
+				.authenticated().and().exceptionHandling().authenticationEntryPoint(jwtAuthenticationEntryPoint).and()
+				.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+
+		httpSecurity.addFilterBefore(jwtRequestFilter, UsernamePasswordAuthenticationFilter.class);
+	}
 }

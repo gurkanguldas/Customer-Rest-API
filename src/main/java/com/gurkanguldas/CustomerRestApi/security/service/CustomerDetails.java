@@ -8,56 +8,47 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import com.gurkanguldas.CustomerRestApi.security.data.CustomerLogin;
 
-public class CustomerDetails implements UserDetails
-{
+public class CustomerDetails implements UserDetails {
 	private static final long serialVersionUID = 8831175503083872249L;
-	
+
 	private CustomerLogin customer;
-	
-	public CustomerDetails(CustomerLogin customer) 
-	{
+
+	public CustomerDetails(CustomerLogin customer) {
 		this.customer = customer;
 	}
 
 	@Override
-	public Collection<? extends GrantedAuthority> getAuthorities() 
-	{
+	public Collection<? extends GrantedAuthority> getAuthorities() {
 		return new ArrayList<>();
 	}
 
 	@Override
-	public String getPassword() 
-	{
+	public String getPassword() {
 		return customer.getPassword();
 	}
 
 	@Override
-	public String getUsername() 
-	{
+	public String getUsername() {
 		return customer.getNickname();
 	}
 
 	@Override
-	public boolean isAccountNonExpired() 
-	{
+	public boolean isAccountNonExpired() {
 		return true;
 	}
 
 	@Override
-	public boolean isAccountNonLocked() 
-	{
+	public boolean isAccountNonLocked() {
 		return true;
 	}
 
 	@Override
-	public boolean isCredentialsNonExpired() 
-	{
+	public boolean isCredentialsNonExpired() {
 		return true;
 	}
 
 	@Override
-	public boolean isEnabled() 
-	{
+	public boolean isEnabled() {
 		return true;
 	}
 

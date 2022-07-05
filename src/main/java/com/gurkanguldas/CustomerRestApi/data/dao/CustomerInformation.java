@@ -22,12 +22,11 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "customer_information")
-public class CustomerInformation implements Serializable,IEntity  
-{
+public class CustomerInformation implements Serializable, IEntity {
 	private static final long serialVersionUID = -693135895354519060L;
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "customer_information_id")
 	private Long id;
 
@@ -45,5 +44,5 @@ public class CustomerInformation implements Serializable,IEntity
 
 	@Column(name = "identification_number", nullable = false, unique = true, columnDefinition = "BIGINT(11)")
 	private Long identificationNumber;
-	
+
 }

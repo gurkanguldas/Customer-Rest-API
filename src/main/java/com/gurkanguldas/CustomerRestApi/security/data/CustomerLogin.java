@@ -13,10 +13,9 @@ import lombok.ToString;
 @NoArgsConstructor
 @Builder
 @ToString
-public class CustomerLogin implements Serializable
-{
+public class CustomerLogin implements Serializable {
 	private static final long serialVersionUID = 8103005479925532851L;
-	
+
 	private String nickname;
 	private String password;
 	private String token;

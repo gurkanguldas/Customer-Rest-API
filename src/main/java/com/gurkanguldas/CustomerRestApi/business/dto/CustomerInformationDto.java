@@ -18,25 +18,24 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 
-public class CustomerInformationDto implements Serializable
-{
+public class CustomerInformationDto implements Serializable {
 	private static final long serialVersionUID = 587108000926014711L;
 
 	private Long id;
-	
+
 	@NotEmpty(message = CustomerValidationMessage.NAME_NOTEMPTY)
 	private String name;
-	
+
 	@NotEmpty(message = CustomerValidationMessage.SURNAME_NOTEMPTY)
 	private String surname;
-	
+
 	@NotEmpty(message = CustomerValidationMessage.GENDER_NOTEMPTY)
 	private String gender;
-	
+
 	@NotNull(message = CustomerValidationMessage.DATE_NOTNULL)
 	private LocalDate dateOfBirth;
-	
+
 	@NotNull(message = CustomerValidationMessage.IDENTITY_NO_NOTNULL)
 	private Long identificationNumber;
-	
+
 }

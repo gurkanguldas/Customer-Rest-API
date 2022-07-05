@@ -11,8 +11,7 @@ import lombok.ToString;
 @Data
 @ToString
 @Builder
-public class ReturnModel<T>
-{
+public class ReturnModel<T> {
 	private Boolean succesful;
 	private String code;
 	private String message;

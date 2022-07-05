@@ -24,27 +24,26 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "customer")
-public class Customer implements Serializable,IEntity 
-{
+public class Customer implements Serializable, IEntity {
 	private static final long serialVersionUID = -7694928137538060519L;
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "customer_id")
 	private Long id;
-	
+
 	@Column(name = "nickname", nullable = false, unique = true)
 	private String nickname;
-	
+
 	@Column(name = "password", nullable = false)
 	private String password;
 
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "customer_id")
 	private CustomerInformation customerInfo;
-	
+
 	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name = "customer_id")
 	private CustomerContact customerContact;
-	
+
 }
