@@ -1,7 +1,9 @@
 
 ## Customer Rest API
 
-#### Libraries Used
+The project aims to transfer customer information to the database in a healthy way. All customers in the project can be searched or a single customer can be searched, deleted or added. At the same time, sorting, pagination and filtering can be done while searching for all customers. All requests are available in the postman collection file. When sending a request, the first login must be made and the token must be received.
+
+#### These are the libraries used in the project.
 
 * Spring Web
 * Spring Data JPA
@@ -13,6 +15,41 @@
 * Spring Security
 * JSON Web Token
 
+## SQL Tables
+
+Three sql tables, customer, customer_contact and customer_information were used in the project. The customer table is in a one-to-one connection with customer_contact and customer_information.
+
+```SQL
+CREATE TABLE customer (
+  customer_id bigint NOT NULL AUTO_INCREMENT,
+  nickname varchar(255) NOT NULL,
+  password varchar(255) NOT NULL,
+  PRIMARY KEY (customer_id),
+  UNIQUE KEY UK_lcu9u62qdnv7kviesuhdgpnmv (nickname)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE customer_contact (
+  customer_contact_id bigint NOT NULL AUTO_INCREMENT,
+  adress varchar(255) NOT NULL,
+  city varchar(255) NOT NULL,
+  country varchar(255) NOT NULL,
+  disrict varchar(255) NOT NULL,
+  phone_number bigint NOT NULL,
+  PRIMARY KEY (customer_contact_id)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+CREATE TABLE customer_information (
+  customer_information_id bigint NOT NULL AUTO_INCREMENT,
+  date_of_birth date NOT NULL,
+  gender varchar(255) NOT NULL,
+  identification_number bigint NOT NULL,
+  name varchar(255) NOT NULL,
+  surname varchar(255) NOT NULL,
+  PRIMARY KEY (customer_information_id),
+  UNIQUE KEY UK_6hfkwf6ldbf78tnebdkq3xduj (identification_number)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+```
+You can find the sql script file [here](https://github.com/gurkanguldas/Customer-Rest-API/blob/main/Customer.sql). The contact and address information in the file is simulated. It does not reflect reality.
 
 ## JSON Web Token For Spring
 #### Generate Token
