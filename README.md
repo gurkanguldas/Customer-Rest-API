@@ -58,7 +58,6 @@ You can find the sql script file [here](https://github.com/gurkanguldas/Customer
 ![](https://user-images.githubusercontent.com/59657939/177349858-380d5054-33ca-4787-984c-f4666b1649a1.svg)
 ## Customer API Endpoints
 #### 1. To Call All Customers
-
 ```
 GET /customer/rest/api/getcustomers
 ```
@@ -855,3 +854,7 @@ DELETE /customer/rest/api/deletecustomer?id=20
 </details>
 
 ***
+
+## Swagger API
+
+![](https://user-images.githubusercontent.com/59657939/177358747-4fce6c75-76dd-4138-a9e8-0bf46354ed22.gif)
