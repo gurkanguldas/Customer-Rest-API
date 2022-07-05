@@ -16,9 +16,9 @@
 
 ## JSON Web Token For Spring
 #### Generate Token
-![](https://www.javainuse.com/62-2-min.JPG)
+![](https://user-images.githubusercontent.com/59657939/177346206-59bb3b69-60f0-4ac4-b821-8be183bbf85c.svg)
 #### Validate Token
-![](https://www.javainuse.com/62-3-min.JPG)
+![](https://user-images.githubusercontent.com/59657939/177349858-380d5054-33ca-4787-984c-f4666b1649a1.svg)
 ## Customer API Endpoints
 #### 1. To Call All Customers
 
