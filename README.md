@@ -857,4 +857,18 @@ DELETE /customer/rest/api/deletecustomer?id=20
 
 ## Swagger API
 
-![](https://user-images.githubusercontent.com/59657939/177358747-4fce6c75-76dd-4138-a9e8-0bf46354ed22.gif)
+1. Customer Rest Endpoints
+![](https://user-images.githubusercontent.com/59657939/177370307-c1d6a0be-7070-4bb9-ac96-7d1a8c2002fb.png)
+
+2. Create Customer
+![](https://user-images.githubusercontent.com/59657939/177370312-e680c7e6-786d-45f7-8fe7-6a376214d9bb.png)
+![](https://user-images.githubusercontent.com/59657939/177370315-f47de70e-8afd-4cc3-b7d9-f4647b21ac82.png)
+
+3. Login
+![](https://user-images.githubusercontent.com/59657939/177370322-e5a25156-657e-4691-b35b-a5a6e5a9d44f.png)
+
+4. Authorize
+![](https://user-images.githubusercontent.com/59657939/177370324-7d4b63cf-363e-4d2d-a408-2bf1f1702653.png)
+
+5. Get Customer By ID
+![](https://user-images.githubusercontent.com/59657939/177370327-31d52ab5-2658-4457-92e9-5c4733e7a174.png)
