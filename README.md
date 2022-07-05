@@ -1,7 +1,7 @@
 
 ## Customer Rest API
 
-The project aims to transfer customer information to the database in a healthy way. All customers in the project can be searched or a single customer can be searched, deleted or added. At the same time, sorting, pagination and filtering can be done while searching for all customers. All requests are available in the postman collection file. When sending a request, the first login must be made and the token must be received.
+The project aims to transfer customer information to the database in a healthy way. All customers can be searched or a single customer can be searched, deleted or added. At the same time, sorting, pagination and filtering can be done while searching for all customers. All requests are available in the postman collection file. When sending a request, the first login must be made and the token must be received.
 
 #### These are the libraries used in the project.
 
