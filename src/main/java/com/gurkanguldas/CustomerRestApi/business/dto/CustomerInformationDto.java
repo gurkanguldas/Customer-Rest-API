@@ -6,6 +6,10 @@ import java.time.LocalDate;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateSerializer;
 import com.gurkanguldas.CustomerRestApi.message.CustomerValidationMessage;
 
 import lombok.AllArgsConstructor;
@@ -34,6 +38,8 @@ public class CustomerInformationDto implements Serializable
 	private String gender;
 
 	@NotNull(message = CustomerValidationMessage.DATE_NOTNULL)
+	@JsonDeserialize(using = LocalDateDeserializer.class)
+	@JsonSerialize(using = LocalDateSerializer.class)
 	private LocalDate dateOfBirth;
 
 	@NotNull(message = CustomerValidationMessage.IDENTITY_NO_NOTNULL)
