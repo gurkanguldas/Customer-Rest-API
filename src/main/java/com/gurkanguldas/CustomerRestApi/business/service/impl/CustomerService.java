@@ -38,8 +38,9 @@ public class CustomerService implements ICustomerService {
 
 	@Autowired
 	public CustomerService(ICustomerRepository customerRepo,
-			SpecificationFilter<Customer> customerFilter,
-			ICustomerExternalService customExternalService) {
+                           SpecificationFilter<Customer> customerFilter,
+                           ICustomerExternalService customExternalService) 
+	{
 		this.customerRepo = customerRepo;
 		this.customerFilter = customerFilter;
 		this.customExternalService = customExternalService;
@@ -47,7 +48,8 @@ public class CustomerService implements ICustomerService {
 
 	@Transactional
 	@Override
-	public ReturnModel<CustomerDto> getCustomerById(Long id) {
+	public ReturnModel<CustomerDto> getCustomerById(Long id) 
+	{
 		Optional<Customer> customer = customerRepo.findById(id);
 
 		ReturnModel<CustomerDto> model = customExternalService.getCustomerById(customer, id);
@@ -60,7 +62,8 @@ public class CustomerService implements ICustomerService {
 	@Transactional
 	@Override
 	public ReturnModel<Set<CustomerDto>> getCustomers(String sortType, boolean descending, int pageSize, int pageNo,
-			String quary, String table, String column, Object value1, Object value2) {
+                                                      String quary, String table, String column, Object value1, Object value2) 
+	{
 		Set<CustomerDto> customers = new LinkedHashSet<>();
 
 		Specification<Customer> sp = customerFilter.mapFilter(table, column, value1, value2).get(quary);
@@ -71,7 +74,8 @@ public class CustomerService implements ICustomerService {
 
 		Page<Customer> customerPage = (Page<Customer>) customerRepo.findAll(sp, pading);
 
-		for (Customer customer : customerPage) {
+		for (Customer customer : customerPage) 
+		{
 			customers.add(modelMapper.map(customer, CustomerDto.class));
 		}
 
@@ -80,13 +84,12 @@ public class CustomerService implements ICustomerService {
 
 	@Transactional
 	@Override
-	public ReturnModel<CustomerDto> addCustomer(CustomerDto customerDto, BindingResult bindingResult) {
-		
+	public ReturnModel<CustomerDto> addCustomer(CustomerDto customerDto, BindingResult bindingResult) 
+	{
 		boolean isCurrentName = customerRepo.findByNickname(customerDto.getNickname()).isPresent();
 		boolean isCurrentIdentity = customerRepo.findByIdentificationNumber(customerDto.getCustomerInfo().getIdentificationNumber()).isPresent();
 
-		ReturnModel<CustomerDto> model = customExternalService.addCustomer(customerDto, isCurrentName,
-				isCurrentIdentity, bindingResult);
+		ReturnModel<CustomerDto> model = customExternalService.addCustomer(customerDto, isCurrentName, isCurrentIdentity, bindingResult);
 
 		customerDto.setPassword(passwordEncoder.encode(customerDto.getPassword()));
 
@@ -99,8 +102,8 @@ public class CustomerService implements ICustomerService {
 
 	@Transactional
 	@Override
-	public ReturnModel<CustomerDto> deleteCustomerById(Long id) {
-
+	public ReturnModel<CustomerDto> deleteCustomerById(Long id) 
+	{
 		Optional<Customer> customer = customerRepo.findById(id);
 
 		ReturnModel<CustomerDto> model = customExternalService.deleteCustomerById(customer, id);

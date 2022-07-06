@@ -1,6 +1,7 @@
 package com.gurkanguldas.CustomerRestApi.message;
 
-public class CustomerSwaggerMessage {
+public class CustomerSwaggerMessage 
+{
 	public static final String CUSTOMER_TAG_DESCRIPTION = "Within the header contains the endpoints used for the customer. Endpoints perform manipulation.";
 	public static final String CUSTOMER_TAG_NAME        = "Customer Rest API";
 

@@ -17,7 +17,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 
-public class CustomerContactDto implements Serializable {
+public class CustomerContactDto implements Serializable 
+{
 	private static final long serialVersionUID = -6868631636490130951L;
 
 	private Long id;

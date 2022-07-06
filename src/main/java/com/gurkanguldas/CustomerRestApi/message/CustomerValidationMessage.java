@@ -1,6 +1,7 @@
 package com.gurkanguldas.CustomerRestApi.message;
 
-public class CustomerValidationMessage {
+public class CustomerValidationMessage 
+{
 	public static final String NICKNAME_NOTEMPTY        = "Nickname is empty.";
 	public static final String PASSWORD_NOTEMPTY        = "Password is empty.";
 	public static final String CUSTOMERINFO_NOTEMPTY    = "Customer informations is empty.";

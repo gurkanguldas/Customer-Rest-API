@@ -37,8 +37,10 @@ public abstract class SpecificationFilter<T extends IEntity> {
 	 * @param value  value to compare in filter
 	 * @return
 	 */
-	protected Specification<T> customerLike(String table, String column, Object value) {
-		return (root, query, criteriaBuilder) -> {
+	protected Specification<T> customerLike(String table, String column, Object value) 
+	{
+		return (root, query, criteriaBuilder) -> 
+		{
 			Map<String, From<?, ?>> mapRoot = mapTables(root);
 			return criteriaBuilder.like(mapRoot.get(table).get(column), value.toString());
 		};
@@ -52,8 +54,10 @@ public abstract class SpecificationFilter<T extends IEntity> {
 	 * @param value  value to compare in filter
 	 * @return
 	 */
-	protected Specification<T> customerIn(String table, String column, Object value) {
-		return (root, query, criteriaBuilder) -> {
+	protected Specification<T> customerIn(String table, String column, Object value) 
+	{
+		return (root, query, criteriaBuilder) -> 
+		{
 			Map<String, From<?, ?>> mapRoot = mapTables(root);
 			return mapRoot.get(table).get(column).in(value);
 		};
@@ -68,11 +72,12 @@ public abstract class SpecificationFilter<T extends IEntity> {
 	 * @param value2 value to compare in filter
 	 * @return
 	 */
-	protected Specification<T> customerBetween(String table, String column, Object value1, Object value2) {
-		return (root, query, criteriaBuilder) -> {
+	protected Specification<T> customerBetween(String table, String column, Object value1, Object value2) 
+	{
+		return (root, query, criteriaBuilder) -> 
+		{
 			Map<String, From<?, ?>> mapRoot = mapTables(root);
-			return criteriaBuilder.between(mapRoot.get(table).get(column), Double.valueOf(value1.toString()),
-					Double.valueOf(value2.toString()));
+			return criteriaBuilder.between(mapRoot.get(table).get(column), Double.valueOf(value1.toString()), Double.valueOf(value2.toString()));
 		};
 	}
 
@@ -84,8 +89,10 @@ public abstract class SpecificationFilter<T extends IEntity> {
 	 * @param value  value to compare in filter
 	 * @return
 	 */
-	protected Specification<T> customerNotEquals(String table, String column, Object value) {
-		return (root, query, criteriaBuilder) -> {
+	protected Specification<T> customerNotEquals(String table, String column, Object value) 
+	{
+		return (root, query, criteriaBuilder) -> 
+		{
 			Map<String, From<?, ?>> mapRoot = mapTables(root);
 			return criteriaBuilder.notEqual(mapRoot.get(table).get(column), value);
 		};
@@ -99,8 +106,10 @@ public abstract class SpecificationFilter<T extends IEntity> {
 	 * @param value  value to compare in filter
 	 * @return
 	 */
-	protected Specification<T> customerEquals(String table, String column, Object value) {
-		return (root, query, criteriaBuilder) -> {
+	protected Specification<T> customerEquals(String table, String column, Object value) 
+	{
+		return (root, query, criteriaBuilder) -> 
+		{
 			Map<String, From<?, ?>> mapRoot = mapTables(root);
 			return criteriaBuilder.equal(mapRoot.get(table).get(column), value);
 		};
@@ -114,11 +123,12 @@ public abstract class SpecificationFilter<T extends IEntity> {
 	 * @param value  value to compare in filter
 	 * @return
 	 */
-	protected Specification<T> customerGreaterThanOrEqualTo(String table, String column, Object value) {
-		return (root, query, criteriaBuilder) -> {
+	protected Specification<T> customerGreaterThanOrEqualTo(String table, String column, Object value) 
+	{
+		return (root, query, criteriaBuilder) -> 
+		{
 			Map<String, From<?, ?>> mapRoot = mapTables(root);
-			return criteriaBuilder.greaterThanOrEqualTo(mapRoot.get(table).get(column),
-					Double.valueOf(value.toString()));
+			return criteriaBuilder.greaterThanOrEqualTo(mapRoot.get(table).get(column), Double.valueOf(value.toString()));
 		};
 	}
 
@@ -130,8 +140,10 @@ public abstract class SpecificationFilter<T extends IEntity> {
 	 * @param value  value to compare in filter
 	 * @return
 	 */
-	protected Specification<T> customerLessThanOrEqualTo(String table, String column, Object value) {
-		return (root, query, criteriaBuilder) -> {
+	protected Specification<T> customerLessThanOrEqualTo(String table, String column, Object value) 
+	{
+		return (root, query, criteriaBuilder) -> 
+		{
 			Map<String, From<?, ?>> mapRoot = mapTables(root);
 			return criteriaBuilder.lessThanOrEqualTo(mapRoot.get(table).get(column), Double.valueOf(value.toString()));
 		};

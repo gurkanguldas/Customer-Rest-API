@@ -18,7 +18,8 @@ import com.gurkanguldas.CustomerRestApi.security.service.CustomerDetailsService;
 @CrossOrigin
 @RestController
 @RequestMapping("/customer/login")
-public class CustomerSecurityRestController implements ICustomerSecurityRestController {
+public class CustomerSecurityRestController implements ICustomerSecurityRestController 
+{
 	@Autowired
 	private AuthenticationManager authenticationManager;
 
@@ -30,8 +31,8 @@ public class CustomerSecurityRestController implements ICustomerSecurityRestCont
 
 	@Override
 	@RequestMapping(value = "/authenticate", method = RequestMethod.POST)
-	public ResponseEntity<?> createAuthenticationToken(@RequestBody CustomerLogin customer) throws Exception {
-		
+	public ResponseEntity<?> createAuthenticationToken(@RequestBody CustomerLogin customer) throws Exception 
+	{
 		authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(customer.getNickname(), customer.getPassword()));
 
 		UserDetails userDetails = userDetailsService.loadUserByUsername(customer.getNickname());

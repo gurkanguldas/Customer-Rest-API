@@ -13,9 +13,11 @@ import com.gurkanguldas.CustomerRestApi.data.dao.Customer;
 import com.gurkanguldas.CustomerRestApi.data.dao.CustomerContact;
 import com.gurkanguldas.CustomerRestApi.data.dao.CustomerInformation;
 
-public class CustomSpecificationFilter extends SpecificationFilter<Customer> {
+public class CustomSpecificationFilter extends SpecificationFilter<Customer> 
+{
 	@Override
-	public Map<String, Specification<Customer>> mapFilter(String table, String column, Object value1, Object value2) {
+	public Map<String, Specification<Customer>> mapFilter(String table, String column, Object value1, Object value2) 
+	{
 		Map<String, Specification<Customer>> map = new HashMap<>();
 
 		map.put("between", customerBetween(table, column, value1, value2));
@@ -32,7 +34,8 @@ public class CustomSpecificationFilter extends SpecificationFilter<Customer> {
 	}
 
 	@Override
-	protected Map<String, From<?, ?>> mapTables(Root<?> root) {
+	protected Map<String, From<?, ?>> mapTables(Root<?> root) 
+	{
 		Map<String, From<?, ?>> map = new HashMap<>();
 
 		Join<Customer, CustomerInformation> customerInfo = root.join("customerInfo");
